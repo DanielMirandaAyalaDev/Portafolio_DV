@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     /*Colores de los fondos*/
-    --font-color-inicio: #080D20;
-    --font-color-portafolio: #203A78;
-    --font-color-acercade: #3A5BFF;
-    --font-color-cv: #8875FF;
-    --font-color-blog: #52617E;
-    /*Colores de otros elementos*/
+    --font-color-fondo: #080D20;
+    --font-color-navbar: #203A78;
+    --violeta-color: #3A5BFF;
     --noche-color: #15234A;
     --cyan-color: #55BFFF;
     --texto-color: #D9E5FF;
     --pale-silver: #C7D5EE;
-
-
 }
 
 * {
@@ -86,6 +81,7 @@ nav ul li a{
     width: 80px;
     height: 80px;
     -webkit-transition: all .3s ease-out;
+    transition: none;
 }
 
 nav ul li a:hover{
@@ -148,7 +144,7 @@ nav li.active a{
 }
 
 nav li.active a:hover{
-    color: var(--font-color-portafolio);
+    color: var(--font-color-navbar);
 }
 
 section > div {
@@ -162,21 +158,21 @@ section > div {
 }
 
 section > div:nth-child(1){
-    background-color: var(--font-color-inicio);
+    background-color: var(--font-color-fondo);
 }
 
 section > div:nth-child(2){
-    background-color: var(--font-color-inicio);
+    background-color: var(--font-color-fondo);
 }
 
 section > div:nth-child(3){
-    background-color: var(--font-color-inicio);
+    background-color: var(--font-color-fondo);
 }
 
 section > div:nth-child(4){
-    background-color: var(--font-color-inicio);
+    background-color: var(--font-color-fondo);
 }
 
 section > div:nth-child(5){
-    background-color: var(--font-color-inicio);
+    background-color: var(--font-color-fondo);
 }

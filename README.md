@@ -4,15 +4,10 @@
 
 ### Fondos
 
-- **#080D20** Fondo de Inicio
-- **#203A78** Fondo de Portafolio
-- **#3A5BFF** Fondo de Acerca de mí
-- **#8875FF** Fondo del CV
-- **#52617E** Fondo del Blog
-
-### Otros elementos
-
-- **#15234A** Color del menú
+- **#080D20** Color del fondo
+- **#203A78** Color de la barra de navegación
+- **#3A5BFF** Color para resaltar
+- **#15234A** Azul oscuro
 - **#55BFFF** Cyan
 - **#D9E5FF** Textos
 - **#C7D5EE** Pale Silver
