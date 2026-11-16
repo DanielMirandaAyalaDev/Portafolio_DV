@@ -147,6 +147,10 @@ nav li.active a{
     color: var(--texto-color)
 }
 
+nav li.active a:hover{
+    color: var(--font-color-portafolio);
+}
+
 section > div {
     height: 100vh;
     display: grid;
@@ -162,17 +166,17 @@ section > div:nth-child(1){
 }
 
 section > div:nth-child(2){
-    background-color: var(--font-color-portafolio);
+    background-color: var(--font-color-inicio);
 }
 
 section > div:nth-child(3){
-    background-color: var(--font-color-acercade);
+    background-color: var(--font-color-inicio);
 }
 
 section > div:nth-child(4){
-    background-color: var(--font-color-cv);
+    background-color: var(--font-color-inicio);
 }
 
 section > div:nth-child(5){
-    background-color: var(--font-color-blog);
+    background-color: var(--font-color-inicio);
 }
