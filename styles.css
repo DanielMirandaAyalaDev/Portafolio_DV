@@ -576,10 +576,11 @@ main > div:not(#home_nav) > h1::after,
     color: var(--texto-color);
 }
 
-.tarjeta p{
+.tarjeta ol{
     font-size: 1rem;
     color: var(--pale-silver);
     opacity: .85;
+    list-style-type: circle;
 }
 
 .etiquetas{
