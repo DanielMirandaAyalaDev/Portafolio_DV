@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portafolio profesional de Daniel Miranda Ayala, desarrollador Java Full Stack Junior.">
+    <meta name="theme-color" content="#080D20">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Daniel Miranda Ayala</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <!--Link al js-->
     <script src="AnimacionMenu.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
     <!--Menú de navegación-->
     <div id="page" class="site">
         <div class="nav_container">
-            <nav>
+            <nav aria-label="Navegación principal">
                 <ul class="navigation">
                     <li class="active">
                         <a href="#home_nav">
@@ -46,49 +50,211 @@
                     </li>
                 </ul>
             </nav>
-
             <!-- Contenido de cada una de las secciones -->
-            <section>
+            <main id="contenido-principal">
                 <div id="home_nav">
-                    <h1 id="nombre_completo">Daniel Miranda Ayala</h1>
-                    <h2>FullStack Developer Junior</h2>
-                    <p>Desarrollador Java Full Stack Junior, con formación en ingeniería especializada en computación. 
-                        Cuento con conocimientos en Java, Python, SQL, APIs y tecnologías de Frontend y Backend. 
-                        Destaco por mi capacidad analítica, facilidad de aprendizaje, adaptabilidad y resolución de problemas. 
+                    <!-- Información sobre mí -->
+                    <p class="saludo revelar">Hola, soy</p>
+                    <h1 id="nombre_completo" class="revelar">Daniel Miranda Ayala</h1>
+                    <h2 class="revelar">FullStack Developer Junior</h2>
+                    <p class="revelar">Desarrollador Java Full Stack Junior, con formación en ingeniería especializada en computación.
+                        Cuento con conocimientos en Java, Python, SQL, APIs y tecnologías de Frontend y Backend.
+                        Destaco por mi capacidad analítica, facilidad de aprendizaje, adaptabilidad y resolución de problemas.
                         Busco contribuir al desarrollo de soluciones de software y fortalecer mis competencias técnicas dentro de un equipo de desarrollo.
                     </p>
-                    <h2>Tecnologías</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>Git/Github</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>SQL</li>
+
+                    <!-- Tecnologías -->
+                    <div class="acciones revelar">
+                        <a class="btn btn-principal" href="#portfolio_nav"><i class="ti ti-code" aria-hidden="true"></i>Ver mis proyectos</a>
+                        <a class="btn btn-secundario" href="#contacto"><i class="ti ti-mail" aria-hidden="true"></i>Contáctame</a>
+                    </div>
+                    <h2 class="titulo-seccion">Tecnologías</h2>
+                    <ul class="tecnologias">
+                        <li class="revelar"><i class="ti ti-brand-html5" aria-hidden="true"></i>HTML</li>
+                        <li class="revelar"><i class="ti ti-brand-css3" aria-hidden="true"></i>CSS</li>
+                        <li class="revelar"><i class="ti ti-brand-javascript" aria-hidden="true"></i>JS</li>
+                        <li class="revelar"><i class="ti ti-brand-github" aria-hidden="true"></i>Git/Github</li>
+                        <li class="revelar"><i class="ti ti-coffee" aria-hidden="true"></i>Java</li>
+                        <li class="revelar"><i class="ti ti-brand-python" aria-hidden="true"></i>Python</li>
+                        <li class="revelar"><i class="ti ti-database" aria-hidden="true"></i>SQL</li>
                     </ul>
 
-                    <h2>Sígueme</h2>
-                    <ul>
-                        <li>Linkedin</li>
-                        <li>Github</li>
+                    <!-- Redes sociales -->
+                    <h2 class="titulo-seccion">Sígueme</h2>
+                    <ul class="redes">
+                        <li><a href="https://www.linkedin.com/in/danielmirandaayala" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                        <li><a href="https://github.com/DanielMirandaAyalaDev" target="_blank" rel="noopener"><i class="ti ti-brand-github" aria-hidden="true"></i><span>Github</span></a></li>
                     </ul>
+
+                    <!-- AÑADIDO IA: círculo rúnico decorativo -->
+                    <div class="runas" aria-hidden="true">
+                        <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <path id="circulo-runas" d="M200 200m-160 0a160 160 0 1 1 320 0a160 160 0 1 1 -320 0" />
+                            </defs>
+                            <circle cx="200" cy="200" r="198" stroke-opacity=".18" />
+                            <g class="anillo-lento">
+                                <circle cx="200" cy="200" r="184" stroke-opacity=".55" />
+                                <circle cx="200" cy="200" r="184" stroke-width="3" stroke-dasharray="1 22" stroke-opacity=".8" />
+                                <text class="texto-runas" fill="currentColor" stroke="none"><textPath href="#circulo-runas" textLength="995">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ</textPath></text>
+                                <circle cx="200" cy="200" r="138" stroke-opacity=".5" />
+                            </g>
+                            <g class="anillo-inverso">
+                                <circle cx="200" cy="200" r="122" stroke-dasharray="46 10 4 10" stroke-opacity=".7" />
+                                <path d="M200 70l8 8l-8 8l-8 -8z M200 314l8 8l-8 8l-8 -8z M70 200l8 -8l8 8l-8 8z M314 200l8 -8l8 8l-8 8z" stroke-width="1.5" />
+                            </g>
+                            <circle cx="200" cy="200" r="100" stroke-width="1.5" stroke-opacity=".9" />
+                            <!-- eje vertical con rombos -->
+                            <path d="M200 -30V92 M200 308V430" stroke-opacity=".7" />
+                            <path d="M200 20l6 6l-6 6l-6 -6z M200 44l6 6l-6 6l-6 -6z M200 344l6 6l-6 6l-6 -6z M200 368l6 6l-6 6l-6 -6z" stroke-width="1.5" />
+                            <!-- emblema central -->
+                            <g class="nucleo" stroke-width="3">
+                                <path d="M200 122l58 70l-58 70l-58 -70z" />
+                                <path d="M200 146l38 46l-38 46l-38 -46z" stroke-width="1.5" stroke-opacity=".6" />
+                                <path d="M200 150v118 M180 178h40 M186 252l14 18l14 -18" />
+                            </g>
+                        </svg>
+                    </div>
                 </div>
+
+                <!-- Portafolio -->
                 <div id="portfolio_nav">
                     <h1>Portafolio</h1>
+                    <div class="proyectos">
+                        <article class="tarjeta revelar">
+                            <i class="ti ti-code tarjeta-icono" aria-hidden="true"></i>
+                            <div>
+                                <h3>Proyecto</h3>
+                                <p>Descripción</p>
+                                <ul class="etiquetas"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                            </div>
+                            <span class="tarjeta-estado" aria-label="Proyecto por publicar">Estado</span>
+                        </article>
+
+                        <article class="tarjeta revelar">
+                            <i class="ti ti-chart-bar tarjeta-icono" aria-hidden="true"></i>
+                            <div>
+                                <h3>Task Master</h3>
+                                <p>API REST y aplicación web para organizar tareas y medir la productividad.</p>
+                                <ul class="etiquetas"><li>Java</li><li>Spring</li><li>SQL</li></ul>
+                            </div>
+                            <span class="tarjeta-estado" aria-label="Proyecto por publicar">En preparación</span>
+                        </article>
+
+                        <article class="tarjeta revelar">
+                            <i class="ti ti-book tarjeta-icono" aria-hidden="true"></i>
+                            <div>
+                                <h3>Rune Notes</h3>
+                                <p>Aplicación de notas con temática mágica y búsqueda por etiquetas.</p>
+                                <ul class="etiquetas"><li>Python</li><li>API</li><li>SQL</li></ul>
+                            </div>
+                            <span class="tarjeta-estado" aria-label="Proyecto por publicar">En preparación</span>
+                        </article>
+                    </div>
                 </div>
+
+                <!-- Sección acerca de mí -->
                 <div id="aboutme_nav">
                     <h1>Acerca de mi</h1>
+
+                    <div class="sobre-mi">
+                        <div class="sobre-mi-texto revelar">
+                            <p>Soy un desarrollador apasionado por resolver problemas, aprender nuevas tecnologías y crear soluciones con sentido. Mi camino en la tecnología está guiado por la curiosidad y el deseo de convertir ideas en realidad.</p>
+                            <p>Me formé como ingeniero en computación y hoy me enfoco en el desarrollo Full Stack con Java, construyendo desde la base de datos hasta la interfaz.</p>
+                            <ul class="cualidades">
+                                <li>Capacidad analítica</li>
+                                <li>Aprendizaje rápido</li>
+                                <li>Adaptabilidad</li>
+                                <li>Resolución de problemas</li>
+                            </ul>
+                        </div>
+
+                        <!-- AÑADIDO IA: Imagen de Laptop -->
+                        <div class="laptop revelar" aria-hidden="true">
+                            <svg viewBox="0 0 320 240" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+                                <circle cx="160" cy="120" r="112" stroke-opacity=".18" />
+                                <circle cx="160" cy="120" r="96" stroke-opacity=".12" stroke-dasharray="3 9" />
+                                <g class="laptop-cuerpo">
+                                    <path class="pantalla" d="M108 40l130 14l-14 96l-130 -14z" stroke-width="3" />
+                                    <path d="M116 50l112 12l-11 78l-112 -12z" stroke-opacity=".5" />
+                                    <path d="M142 86l-12 12l10 14 M196 92l12 14l-14 12 M176 82l-14 42" stroke-width="3" />
+                                    <path class="teclado" d="M94 136l130 14l34 24l-152 -14z" stroke-width="3" />
+                                    <path d="M110 146l110 12 M116 154l110 12 M150 166l40 4" stroke-opacity=".5" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Sección de CV -->
                 <div id="cv_nav">
                     <h1>CV</h1>
+
+                    <div class="cv">
+                        <div class="cv-columna revelar">
+                            <h3><i class="ti ti-school" aria-hidden="true"></i>Formación</h3>
+                            <ol class="linea-tiempo">
+                                <li>
+                                    <span class="fecha">Septiembre 2026 — Diciembre 2026</span>
+                                    <h4>Desarrollador Java Fullstack</h4>
+                                    <p>Generation México</p>
+                                </li>
+                                <li>
+                                    <span class="fecha">Agosto 2019 — Julio 2024</span>
+                                    <h4>Ingeniería en computación</h4>
+                                    <p>Universidad Nacional Autónoma de México</p>
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div class="cv-columna revelar">
+                            <h3><i class="ti ti-briefcase" aria-hidden="true"></i>Experiencia</h3>
+                            <ol class="linea-tiempo">
+                                <li>
+                                    <span class="fecha">[Año] — Actualidad</span>
+                                    <h4>Proyectos personales</h4>
+                                    <p>Aplicaciones web con Java, APIs REST, SQL y JavaScript.</p>
+                                </li>
+                                <li>
+                                    <span class="fecha">[Año]</span>
+                                    <h4>[Puesto / prácticas]</h4>
+                                    <p>[Empresa] — [logro principal en una línea].</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Link de descarga del pdf -->
+                    <a class="btn btn-principal btn-centro" href="cv.pdf" download><i class="ti ti-download" aria-hidden="true"></i>Descargar CV</a>
                 </div>
+                
+                <!-- Sección del blog -->
                 <div id="blog_nav">
                     <h1>Blog</h1>
+                    <!-- AÑADIDO: entradas del blog -->
+                    <div class="entradas">
+                        <article class="entrada revelar">
+                            <span class="fecha"><i class="ti ti-calendar" aria-hidden="true"></i>Próximamente</span>
+                            <h3>Mis primeros pasos con Java y Spring Boot</h3>
+                            <p>Lo que aprendí al construir mi primera API REST de principio a fin.</p>
+                            <span class="entrada-estado">Artículo próximamente</span>
+                        </article>
+                        <article class="entrada revelar">
+                            <span class="fecha"><i class="ti ti-calendar" aria-hidden="true"></i>Próximamente</span>
+                            <h3>Git sin miedo: un flujo de trabajo sencillo</h3>
+                            <p>Ramas, commits y pull requests explicados con ejemplos del día a día.</p>
+                            <span class="entrada-estado">Artículo próximamente</span>
+                        </article>
+                        <article class="entrada revelar">
+                            <span class="fecha"><i class="ti ti-calendar" aria-hidden="true"></i>Próximamente</span>
+                            <h3>Cómo diseñé este portafolio</h3>
+                            <p>Variables CSS, SVG animados y una barra de navegación con estilo propio.</p>
+                            <span class="entrada-estado">Artículo próximamente</span>
+                        </article>
+                    </div>
                 </div>
-            </section>
+            </main>
         </div>
     </div>
-
 </body>
 </html>
