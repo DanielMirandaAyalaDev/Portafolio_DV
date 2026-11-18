@@ -16,7 +16,7 @@
     --linea: #6E8CFF;
     --panel: #15234A;
     --brillo: #3A5BFF;
-    --brillo-cyan: 55BFFF;
+    --brillo-cyan: #55BFFF;
 
     /* Tipografías */
     --serif-titulos: "Cormorant Garamond", Georgia, serif;
@@ -536,8 +536,9 @@ main > div:not(#home_nav) > h1::after,
     position: relative;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1.25rem;
-    padding: 1.8rem 1.6rem 3.4rem;
+    grid-template-rows: 1fr auto auto;   /* contenido | estado | botón */
+    gap: .9rem 1.25rem;    
+    padding: 1.8rem 1.6rem;
     border: 1px solid var(--linea);
     border-radius: 14px;
     background: linear-gradient(160deg, rgba(58, 91, 255, .12), rgba(8, 13, 32, .4) 60%);
@@ -576,11 +577,49 @@ main > div:not(#home_nav) > h1::after,
     color: var(--texto-color);
 }
 
-.tarjeta ol{
+.tarjeta div > ul:not(.etiquetas){
+    padding-left: 1.2rem;
     font-size: 1rem;
     color: var(--pale-silver);
     opacity: .85;
     list-style-type: circle;
+}
+
+.tarjeta div > ul:not(.etiquetas) li + li{
+    margin-top: .4rem;
+}
+
+.tarjeta > span{
+    grid-column: 2;
+}
+
+.tarjeta > span > a{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .55rem 1.1rem;
+    font-size: .95rem;
+    color: var(--texto-color);
+    border: 1px solid var(--azul-runa);
+    border-radius: 10px;
+    background: rgba(58, 91, 255, .1);
+    box-shadow: 0 0 10px rgba(58, 91, 255, .3);
+    transition: color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.tarjeta > span > a::after{
+    content: "→";
+    transition: transform .25s ease;
+}
+
+.tarjeta > span > a:hover{
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(85, 191, 255, .5);
+}
+
+.tarjeta > span > a:hover::after{
+    transform: translateX(4px);
 }
 
 .etiquetas{
@@ -610,19 +649,6 @@ main > div:not(#home_nav) > h1::after,
     transition: transform .3s ease, color .3s ease;
 }
 
-.tarjeta-enlace::after{          /* toda la tarjeta es clicable */
-    content: "";
-    position: absolute;
-    inset: -100vmax;
-    clip-path: inset(0);
-}
-
-.tarjeta:hover .tarjeta-enlace{
-    transform: translateX(4px);
-    color: var(--cyan-color);
-}
-
-/* Etiqueta "En preparación" / "Artículo próximamente" */
 .tarjeta-estado, .entrada-estado{
     display: inline-flex;
     align-items: center;
@@ -659,17 +685,6 @@ main > div:not(#home_nav) > h1::after,
 }
 
 .entrada p{ flex: 1; color: var(--pale-silver); opacity: .85; }
-.entrada a{
-    display: inline-flex;
-    align-items: center;
-    gap: .4rem;
-    width: fit-content;
-    color: var(--azul-runa);
-}
-
-.entrada a:hover{ 
-    color: var(--cyan-color); 
-}
 
 /* =====================================================================
    SOBRE MÍ
