@@ -686,6 +686,79 @@ main > div:not(#home_nav) > h1::after,
 
 .entrada p{ flex: 1; color: var(--pale-silver); opacity: .85; }
 
+/* Reflexión destacada: va a ocupar todo el anocho de la sección */
+.entrada-destacada{
+    grid-column: 1 / -1;
+    padding: clamp(1.6rem, 4vw, 2.4rem);
+    background: linear-gradient(160deg, rgba(58, 91, 255, .16), rgba(8, 13, 32, .4) 65%);
+}
+
+.entrada-destacada:hover{
+    transform: none;    /* no se mueve mientras se lee */
+}
+
+.entrada-destacada h3{
+    font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+}
+
+.entrada-destacada > p{
+    max-width: 65ch;
+}
+
+/* Botón "Leer la reflexión completa" */
+.entrada summary{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    width: fit-content;
+    margin-top: .4rem;
+    padding: .55rem 1.1rem;
+    list-style: none;
+    cursor: pointer;
+    color: var(--texto-color);
+    border: 1px solid var(--azul-runa);
+    border-radius: 10px;
+    background: rgba(58, 91, 255, .1);
+    box-shadow: 0 0 10px rgba(58, 91, 255, .3);
+    transition: color .25s ease, box-shadow .25s ease;
+}
+
+.entrada summary::-webkit-details-marker{
+    display: none;
+}
+
+.entrada summary::after{
+    content: "↓";
+    transition: transform .25s ease;
+}
+
+.entrada summary:hover{
+    color: #fff;
+    box-shadow: 0 0 20px rgba(85, 191, 255, .5);
+}
+
+.entrada details[open] summary::after{
+    transform: rotate(180deg);
+}
+
+/* Texto completo de la reflexión */
+.entrada-cuerpo{
+    max-width: 70ch;
+    margin-top: 1.4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(110, 140, 255, .25);
+}
+
+.entrada-cuerpo p{
+    font-size: 1.08rem;
+    color: var(--pale-silver);
+    opacity: .9;
+}
+
+.entrada-cuerpo p + p{
+    margin-top: 1rem;
+}
+
 /* =====================================================================
    SOBRE MÍ
    ===================================================================== */
